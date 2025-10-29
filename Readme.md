@@ -1,1 +1,112 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyMb3Y8z/uErqhT5oSifCQVn"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"markdown","source":["# 📊 Hypothesis Testing on Taxi Driver Revenue\n","### **Analysis of Payment Type vs Total Fare Amount**\n","\n","---\n","\n","## ✅ 1. Project Overview\n","The global taxi booking industry relies heavily on optimized revenue strategies to ensure both profitability and driver satisfaction.  \n","This data-driven project investigates whether the **method of payment (Credit Card vs Cash)** has a statistically significant impact on **total fare amount**, using hypothesis testing and exploratory data analysis.\n","\n","The entire analysis is implemented using **Python on Google Colab**, supported with visualizations and descriptive statistics.\n","\n","---\n","\n","## ✅ 2. Problem Statement\n","Taxi platforms offer multiple payment modes, but do all payment types generate the same revenue?\n","\n","> **Is there a difference in fare amounts between credit card users and cash users?**  \n","If so, can taxi companies encourage certain payment methods to improve driver revenue without affecting customer experience?\n","\n","---\n","\n","## ✅ 3. Objective\n","- To perform an **A/B Statistical Hypothesis Test**  \n","- Compare total fare between:\n","  - **Group A:** Credit Card payments  \n","  - **Group B:** Cash payments  \n","- Use Python-based statistical methods to test significance\n","- Derive revenue-focused insights from the results\n","\n","---\n","\n","## ✅ 4. Research Question\n","> **Does payment type influence the total fare amount?**  \n","And can drivers/platforms strategically nudge customers toward higher-revenue payment methods?\n","\n","---\n","\n","## ✅ 5. Hypothesis\n","- **H₀ (Null Hypothesis):** Payment method has no significant effect on total fare amount.  \n","- **H₁ (Alternative Hypothesis):** Payment method has a significant effect on total fare amount.\n","\n","---\n","\n","## ✅ 6. Methodology\n","✔ Dataset imported into Google Colab  \n","✔ Data cleaning (handling missing values, duplicates, incorrect formats)  \n","✔ Exploratory Data Analysis (EDA):\n","- Fare distribution\n","- Payment type trends\n","- Revenue comparison using visualizations  \n","✔ Statistical Testing using Python:\n","- t-test / ANOVA (based on distribution and sample size)\n","- p-value interpretation\n","✔ Business insights based on results\n","\n","---\n","\n","## ✅ 7. Tools & Technologies\n","| Category | Tools |\n","|----------|-------|\n","| Programming | Python (Google Colab) |\n","| Libraries | Pandas, NumPy, Matplotlib, Seaborn, SciPy |\n","| Documentation | README, PowerPoint Presentation |\n","\n","---\n","\n","## ✅ 8. Key Findings\n","- Average fare for credit card transactions was higher than cash\n","- p-value < 0.05 → **Null hypothesis rejected**\n","✅ Payment method has a statistically significant effect on fare  \n","✅ Card-based payments generate higher revenue on average\n","---\n","\n","## ✅ 9. Business Insights\n","- Drivers/platforms can encourage digital payments\n","- Cashback or loyalty points may increase card usage\n","- Higher transparency and reduced bargaining in card transactions\n","- Supports data-driven revenue optimization\n","\n","---\n","\n","## ✅ 10. Repository Structure\n","| File Name | Description |\n","|-----------|-------------|\n","| `notebook.ipynb` | Google Colab notebook with full analysis |\n","| `presentation.pptx` | Final project slides |\n","| `README.md` | Project documentation |\n","\n","---\n","\n","## ✅ 11. How to Run This Project\n","1. Download the notebook or open in Google Colab  \n","2. Install required Python libraries:\n","```python\n","pip install pandas numpy matplotlib seaborn scipy\n","\n","✅ 12. Conclusion\n","\n","Statistical hypothesis testing shows that payment method significantly affects fare amount.\n","This supports decision-making for taxi drivers and companies to promote payment modes that maximize revenue and improve financial outcomes.\n","\n","✅ 14. Contact & Profiles\n","\n","📌 GitHub: https://github.com/shireensiddiqui-S\n","\n","📩 Email: shireensiddiqui652@gmail.com"],"metadata":{"id":"aKjbVlb1L8WD"}}]}
+# 📊 Hypothesis Testing on Taxi Driver Revenue
+### **Analysis of Payment Type vs Total Fare Amount**
+
+---
+
+## ✅ 1. Project Overview
+The global taxi booking industry relies heavily on optimized revenue strategies to ensure both profitability and driver satisfaction.  
+This data-driven project investigates whether the **method of payment (Credit Card vs Cash)** has a statistically significant impact on **total fare amount**, using hypothesis testing and exploratory data analysis.
+
+The entire analysis is implemented using **Python on Google Colab**, supported with visualizations and descriptive statistics.
+
+---
+
+## ✅ 2. Problem Statement
+Taxi platforms offer multiple payment modes, but do all payment types generate the same revenue?
+
+> **Is there a difference in fare amounts between credit card users and cash users?**  
+If so, can taxi companies encourage certain payment methods to improve driver revenue without affecting customer experience?
+
+---
+
+## ✅ 3. Objective
+- To perform an **A/B Statistical Hypothesis Test**  
+- Compare total fare between:
+  - **Group A:** Credit Card payments  
+  - **Group B:** Cash payments  
+- Use Python-based statistical methods to test significance
+- Derive revenue-focused insights from the results
+
+---
+
+## ✅ 4. Research Question
+> **Does payment type influence the total fare amount?**  
+And can drivers/platforms strategically nudge customers toward higher-revenue payment methods?
+
+---
+
+## ✅ 5. Hypothesis
+- **H₀ (Null Hypothesis):** Payment method has no significant effect on total fare amount.  
+- **H₁ (Alternative Hypothesis):** Payment method has a significant effect on total fare amount.
+
+---
+
+## ✅ 6. Methodology
+✔ Dataset imported into Google Colab  
+✔ Data cleaning (handling missing values, duplicates, incorrect formats)  
+✔ Exploratory Data Analysis (EDA):
+- Fare distribution
+- Payment type trends
+- Revenue comparison using visualizations  
+✔ Statistical Testing using Python:
+- t-test / ANOVA (based on distribution and sample size)
+- p-value interpretation
+✔ Business insights based on results
+
+---
+
+## ✅ 7. Tools & Technologies
+| Category | Tools |
+|----------|-------|
+| Programming | Python (Google Colab) |
+| Libraries | Pandas, NumPy, Matplotlib, Seaborn, SciPy |
+| Documentation | README, PowerPoint Presentation |
+
+---
+
+## ✅ 8. Key Findings 
+- Average fare for credit card transactions was higher than cash
+- p-value < 0.05 → **Null hypothesis rejected**
+✅ Payment method has a statistically significant effect on fare  
+✅ Card-based payments generate higher revenue on average
+
+## Visualization
+1. <img width="494" height="424" alt="Screenshot 1" src="https://github.com/user-attachments/assets/3fd29338-1156-44d3-9c1a-e8b4985cec2a" />
+2. <img width="1070" height="465" alt="Screenshot " src="https://github.com/user-attachments/assets/92ccf4d6-526c-4ba1-8d48-bbae2c276647" />
+3. <img width="637" height="414" alt="Screenshot 2" src="https://github.com/user-attachments/assets/20d634c9-82a1-4897-a8a7-10eda4263d5a" />
+
+
+---
+
+## ✅ 9. Business Insights
+- Drivers/platforms can encourage digital payments
+- Cashback or loyalty points may increase card usage
+- Higher transparency and reduced bargaining in card transactions
+- Supports data-driven revenue optimization
+
+---
+
+## ✅ 10. Repository Structure
+| File Name | Description |
+|-----------|-------------|
+| `notebook.ipynb` | Google Colab notebook with full analysis |
+| `presentation.pptx` | Final project slides |
+| `README.md` | Project documentation |
+
+---
+
+## ✅ 11. How to Run This Project
+1. Download the notebook or open in Google Colab  
+2. Install required Python libraries:
+```python
+
+## ✅ 12. Conclusion
+
+Statistical hypothesis testing shows that payment method significantly affects fare amount.
+This supports decision-making for taxi drivers and companies to promote payment modes that maximize revenue and improve financial outcomes.
+
+## ✅ 13. Contact & Profiles
+
+📌 GitHub: https://github.com/shireensiddiqui-S
+
+📩 Email: shireensiddiqui652@gmail.com
